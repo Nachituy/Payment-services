@@ -36,13 +36,10 @@ jobs:
      #    name: Package
      #   path: staging
 
+       run: mvn -B package --file pom.xml
 
-
-   
-      run: mvn -B package --file pom.xml
-
-    - name: Publish to GitHub Packages Apache Maven
-      run: mkdir staging
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
-      #env:
+     - name: Publish to GitHub Packages Apache Maven
+       run: mkdir staging
+       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+       #env:
        # GITHUB_TOKEN: ${{ github.token }}
