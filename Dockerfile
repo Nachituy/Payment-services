@@ -14,6 +14,6 @@ RUN mvn -f pom.xml clean package
 #
 FROM openjdk:8-jdk-alpine
 ARG JAR_FILE
-COPY --from=build /app/target/*.jar /usr/local/lib/payments.jar
+COPY --from=build /app/target/payments-service-example-0.0.1-SNAPSHOT-spring-boot.jar /usr/local/lib/payments.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/usr/local/lib/payments.jar"]
