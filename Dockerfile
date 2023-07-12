@@ -4,8 +4,8 @@
 FROM maven:3.6.0-jdk-11-slim AS build 
 
 WORKDIR /app
-COPY BE/payments-service-example/src src
-COPY BE/payments-service-example/pom.xml pom.xml
+COPY src src
+COPY pom.xml pom.xml
 
 RUN mvn -f pom.xml clean package
 
