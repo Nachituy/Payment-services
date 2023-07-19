@@ -74,7 +74,7 @@ jobs:
              rm /tmp/awscliv2.zip
              sudo /tmp/aws/install --update
              rm -rf /tmp/aws/ 
-             aws eks update-kubeconfig --region us-east-1 --name ${{ vars.Cluster-PROD}}
+             aws eks update-kubeconfig --region us-east-1 --name Cluster-PROD
              sudo apt-get update
              sudo apt-get install -y ca-certificates curl
              curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg
