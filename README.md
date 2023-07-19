@@ -6,7 +6,7 @@ luego se construye el container image y realiza push al ECR
 
 Se necesita la creacion de secrets 
 
-cat ~/.kube/config | base64   copiamos el stdout y lo  guardamos como KUBE_CONFIG_DATA  
+  
 
 # Secrets: 
 
@@ -18,6 +18,4 @@ cat ~/.kube/config | base64   copiamos el stdout y lo  guardamos como KUBE_CONFI
 
 - CLUSTER_NAME
 
-Estos los uso en Testing/Desarrollo para deploy contra el AWS de GROLAND
-
-En Producción usamos los secrets de Ignacio Greco y levantamos en ese otro LAB??
+En Producción usamos los secrets de Ignacio Greco
