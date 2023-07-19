@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: payments
-          image: 612686574181.dkr.ecr.us-east-1.amazonaws.com/obligatorio:payments_image
+          image: 201748105803.dkr.ecr.us-east-1.amazonaws.com/obligatorio:payments_image
           imagePullPolicy: Always
           
           ports:
