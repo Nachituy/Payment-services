@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orders-deployment
+  name: payments-deployment
   labels:
-    app: orders
+    app: payments
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: orders
+      app: payments
   template:
     metadata:
       labels:
-        app: orders
+        app: payments
     spec:
       containers:
-        - name: orders
-          image: 612686574181.dkr.ecr.us-east-1.amazonaws.com/obligatorio:orders_image
+        - name: payments
+          image: 612686574181.dkr.ecr.us-east-1.amazonaws.com/obligatorio:payments_image
           
           ports:
             - containerPort: 8080
