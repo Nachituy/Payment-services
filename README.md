@@ -13,7 +13,10 @@ cat ~/.kube/config | base64   copiamos el stdout y lo  guardamos como KUBE_CONFI
 - AWS_ACCESS_KEY_ID_DESA
 - AWS_SECRET_ACCESS_KEY_DESA
 - AWS_SESSION_TOKEN_DESA
-- KUBE_CONFIG_DATA
+
+# Variables git
+
+- CLUSTER_NAME
 
 Estos los uso en Testing/Desarrollo para deploy contra el AWS de GROLAND
 
